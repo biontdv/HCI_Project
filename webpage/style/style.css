@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -6,6 +7,7 @@
 
 body{
     height: 100%;
+    background-color: #393e46;
 }
 
 nav{
@@ -13,6 +15,7 @@ nav{
     margin: 0;
     padding: 0;
     position: fixed;
+    z-index: 999;
 }
 
 .navbar{
@@ -76,9 +79,6 @@ nav ul li{
 .sub-category li a{
     color: #eeeeee;
 }
-  
-  
-
 
 nav ul li a{
     text-decoration: none;
@@ -86,6 +86,7 @@ nav ul li a{
 }
 
 section{
+
     background-color:#393e46;
     padding: 3em;
 }
@@ -126,25 +127,46 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 1em 0;
+    margin: 30px 0;
     color:  #ffd369;
     font-size: 42px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+.women-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:  #ffd369;
+    font-size: 42px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 2em;
+}
+
 .card-product{
     display: inline-block;
+    height: 300px;
+    width: 200px;
     padding: 20px;
     background-color:#eeeeee;
     border-radius: 20px;
     margin: 0em 5em 2em 2em;
 }
 
+
 .card-product img{
+    height: 250px; /*fadel*/
     width: 200px;
+    transition: transform .2s;
 }
 
-
+.card-product img:hover{
+    height: 250px; /*fadel*/
+    width: 200px;
+    transform: scale(1.1);
+    position: relative;
+    z-index: 99;
+}
 
 footer{
     background-color: #ffd369;
@@ -166,4 +188,351 @@ footer ul li{
     margin-left: 3em;
     text-decoration: none;
     list-style-type: none;
+}
+
+
+.register-form
+{
+    display: block;
+    padding-top: 10px;
+}
+
+.agreement-spacing
+{
+    display: block;
+    padding-top: 2cm;
+}
+
+.register-box
+{
+    width: 500px;
+    height: 500px;
+    background-color: #ffd369;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 20px;
+    transition: 0.8s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.register-box:hover
+{
+    box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+.middle-box
+{
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.center-button
+{
+    padding-top: 15px;
+    justify-content: center;
+    display: flex;
+}
+
+.button-Regist
+{
+    border-radius: 10px;
+    padding: 3px;
+    border-style: solid;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+}
+
+.about-box
+{
+    margin-top: 50px;
+    height: 300px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.intro
+{
+    height: 300px;
+    width: 100%;
+    display: inline-flex;
+    margin-top: 200px;
+    justify-content: center;
+}
+
+.left-intro
+{
+    height: 300px;
+    width: 300px;   
+    display: flex;
+    background-image: url('../../asset/160583526210d98b407a51001f94b46b7a8f7e039d_thumbnail_600x.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    border-radius: 100px; 
+    transition: 0.8s;
+}
+
+.space-between
+{
+    width: 150px;
+}
+
+.right-intro
+{
+    height: 300px;
+    width: 900px;
+    display: flex;
+    transform: scale(1.08,1.08);
+    transition: 1.2s;
+}
+
+.content-about
+{
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    align-items: center;
+    display: inline-flex;
+    text-align: justify;
+}
+
+.contact
+{
+    height: 400px;
+    width: 100%;
+    display: inline-flex;
+    margin-top: 200px;
+    justify-content: center;
+    /* background-color: #eeeeee; */
+    background-image: url('../../asset/Call-Center.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+
+}
+
+.button-customer
+{
+    background-color: #ffd369;
+    border-radius: 10px;
+    height: 50px;
+    width: 120px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family:cursive;
+    text-decoration: none;
+    user-select: none;
+    color: black;
+    transition: 0.8s;
+    box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button-customer:hover
+{
+    height: 80px;
+    width: 150px;
+}
+
+.middle-button-customer
+{
+    height: 400px;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.customer-contact
+{
+    height: 400px;
+    width: 800px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.contact-content
+{
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    text-align: justify;
+}
+
+.support
+{
+    width: 100%;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    background-color: #222831;
+}
+
+.supp1
+{
+    width: 200px;
+    height: 400px;
+    justify-content: center;
+    display: flex;
+}
+.supp2
+{
+    width: 200px;
+    height: 400px;
+    justify-content: center;
+    display: flex;
+}
+.supp3
+{   
+    width: 200px;
+    height: 400px;
+    justify-content: center;
+    display: flex;
+}
+.supp4
+{
+    width: 400px;
+    height: 400px;
+    display: flex;
+}
+
+.supp1-text
+{
+    margin-top: 100px;
+    text-decoration: none;
+    user-select: none;
+    color: #eeeeee;
+}
+
+.supp2-text
+{
+    margin-top: 100px;
+    text-decoration: none;
+    user-select: none;
+    color: #eeeeee;
+}
+
+.supp3-text
+{
+    margin-top: 100px;
+    text-decoration: none;
+    user-select: none;
+    color: #eeeeee;
+}
+
+.supp4-content
+{
+    margin-top: 100px;
+    margin-left: 50px;
+    text-decoration: none;
+    user-select: none;
+    color: #eeeeee;
+}
+
+@media only screen and (max-width: 800px) {
+    .nav-logo{
+        margin-left: 1em;
+    }
+
+    .nav-logo img{
+        width: 120px;
+    }
+
+    nav ul li{
+        margin: 20px 5em 20px 0em;
+    }
+    nav ul li a{
+        margin: 0 2em;
+        margin-bottom: 30px;
+        font-size: 10px;
+    }
+
+    .dropdown h2{        
+        font-size: 14px;
+    }
+
+    .dropdown:hover .sub-category {
+        width: 100px;
+        
+    }
+
+    .sub-category {
+        min-width: 0px;
+    }
+
+    .sub-category li{
+        margin-top: 20px;
+        margin-left: 50%;
+        margin-right: 50%;
+        
+    }
+
+    .slider {
+        width: 600px;
+        height: 300px;     
+    }
+    
+    .slider ul{
+        width: 6000px;
+        height: 300px;  
+    }
+    
+    .slider ul li{
+        margin-top: 50px;
+    }
+    
+    .slider img{
+        width: 600px;
+        float: left;   
+    }
+
+    .product{
+        padding: 1em;
+    }
+    .card-product{
+        margin: 0em 0 2em 3.5em;
+    }
+
+    .about-box img
+    {
+        width: 450px;
+        height: 190px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .left-intro
+    {
+        height: 300px;
+        width: 500px;   
+    }
+    
+    .right-intro
+    {
+        height: 250px;
+        width: 900px;
+    }
+
+    .content-about
+    {
+        font-size: 15px;
+    }
+    .contact-content
+    {
+        font-size: 15px;
+    }
+    .button-customer
+    {
+        border-radius: 5px;
+        height: 30px;
+        width: 100px;
+    }
+
 }

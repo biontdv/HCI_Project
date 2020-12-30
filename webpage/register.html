@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register-Form</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script/validate.js"></script>
+</head>
+<body>
+
+    
+    <nav>
+        <div class="navbar">
+            <div class="nav-logo">
+                <img src="../logo/NEWLOGOBULANs.png" alt="">
+            </div>
+
+            <div class="nav-menu">
+                <ul>
+                    <li>
+                        <a href="./index.html">
+                            <h2>HOME</h2>
+                        </a>
+                    </li>
+                    <li>
+                        
+
+                        <div class="dropdown">
+                            <h2>CATEGORIES</h2>
+                            
+                            <ul class="sub-category">
+                                <li>
+                                    <a href="men.html">
+                                        <h2>MEN</h2>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./women.html">
+                                        <h2>WOMEN</h2>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <a href="register.html">
+                            <h2>REGISTER</h2>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html">
+                            <h2>ABOUT US</h2>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+    <div class="middle-box">
+        <div class="register-box">
+            <div>
+                <form name="register" action="index.html" method="POST" onsubmit="myFunction()">
+        
+                    <label class="register-form" for="email">Email</label>
+                    <input type="text" name="email" id="email" size="35">
+                
+                    <label class="register-form" for="password">Password</label>
+                    <input type="password" name="password" id="password" size="35">
+                
+                    <label class="register-form" for="address">Address</label>
+                    <input type="text" name="address" id="address" size="35">
+                
+                    <label class="register-form" for="dob">Date Of Birth</label>
+                    <input type="date" name="dob" id="dob" size="35">
+                
+                    <label class="register-form" for="gender">Gender</label>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male" value="male">
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="female" value="female">
+                        
+                    <br>
+                    <label class="agreement-spacing" for="agreement"></label>
+                    <input type="checkbox" name="agreement" id="agreement"> I Agree with Terms and Condition
+        
+                    <br>
+                    <div class="center-button">
+                        <input class="button-Regist" type="submit" name="submit" value="Register">
+                    </div>
+            
+                </form>
+            </div>
+        </div>
+    </div>
+            
+    <footer>
+        <ul>                <li><a href="https://www.facebook.com/"><img src="../asset/logo facebook.png" alt=""></a></li>
+            <li><a href="https://www.instagram.com/"><img src="../asset/logo instagram.png" alt=""></a></li>
+            <li><a href="https://twitter.com/"><img src="../asset/logo twitter.png" alt=""></a></li>
+            <li><a href="https://mail.google.com/"><img src="../asset/logo gmail.png" alt=""></a></li>
+        </ul>
+    </footer>
+    
+    
+</body>
+</html>
