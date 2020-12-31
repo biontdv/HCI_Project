@@ -374,27 +374,14 @@ footer ul li{
     background-color: #222831;
 }
 
-.supp1
+.supp
 {
     width: 200px;
     height: 400px;
     justify-content: center;
     display: flex;
 }
-.supp2
-{
-    width: 200px;
-    height: 400px;
-    justify-content: center;
-    display: flex;
-}
-.supp3
-{   
-    width: 200px;
-    height: 400px;
-    justify-content: center;
-    display: flex;
-}
+
 .supp4
 {
     width: 400px;
@@ -435,7 +422,117 @@ footer ul li{
     color: #eeeeee;
 }
 
+@media only screen and (max-width: 800px) {
+    .nav-logo{
+        margin-left: 1em;
+    }
+
+    .nav-logo img{
+        width: 120px;
+    }
+
+    nav ul li{
+        margin: 20px 5em 20px 0em;
+    }
+    nav ul li a{
+        margin: 0 2em;
+        margin-bottom: 30px;
+        font-size: 10px;
+    }
+
+    .dropdown h2{        
+        font-size: 14px;
+    }
+
+    .dropdown:hover .sub-category {
+        width: 100px;
+        
+    }
+
+    .sub-category {
+        min-width: 0px;
+    }
+
+    .sub-category li{
+        margin-top: 20px;
+        margin-left: 50%;
+        margin-right: 50%;
+        
+    }
+
+    .slider {
+        width: 600px;
+        height: 300px;     
+    }
+    
+    .slider ul{
+        width: 6000px;
+        height: 300px;  
+    }
+    
+    .slider ul li{
+        margin-top: 50px;
+    }
+    
+    .slider img{
+        width: 600px;
+        float: left;   
+    }
+
+    .product{
+        padding: 1em;
+    }
+    .card-product{
+        margin: 0em 0 2em 3.5em;
+    }
+
+    .about-box img
+    {
+        width: 450px;
+        height: 190px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .left-intro
+    {
+        height: 300px;
+        width: 500px;   
+    }
+    
+    .right-intro
+    {
+        height: 250px;
+        width: 900px;
+    }
+
+    .content-about
+    {
+        font-size: 15px;
+    }
+    .contact-content
+    {
+        font-size: 15px;
+    }
+    .button-customer
+    {
+        border-radius: 5px;
+        height: 30px;
+        width: 100px;
+    }
+
+    .contact{
+    height: 400px;
+    width: 700px;
+    background-size: 700px;
+    }
+
+}
+
+
 @media only screen and (max-width: 415px) {
+
     
     .nav-logo{
         margin-left: 0em;
@@ -446,10 +543,10 @@ footer ul li{
     }
 
     nav ul li{
-        margin: 15px 3em 15px 0em;
+        margin: 15px 1em 15px 0em;
     }
     nav ul li a{
-        margin: 0 2em;
+        margin: 0 2em 0 2em;
         margin-bottom: 30px;
         font-size: 5px;
     }
@@ -460,7 +557,7 @@ footer ul li{
     }
 
     .dropdown h2{        
-        font-size: 14px;
+        font-size: 8px;
     }
 
     .dropdown:hover .sub-category {
@@ -509,10 +606,35 @@ footer ul li{
     }
 
     .product{
-        padding: 1em;
+        padding:0;
     }
     .card-product{
-        margin: 0em 0 2em 1em;
+        height: auto;
+        min-height: 180px;
+        max-height: 180px;
+        padding: 20px;
+        width: 130px;
+        margin: 0em 0 2em 0.5em;
+    }
+
+    .card-product img{
+
+        height: 130px;
+
+        width: 130px;
+        transition: transform .2s;
+    }
+
+    .card-product p{
+        font-size: 14px;
+    }
+
+
+    .card-product img:hover{
+        height: 130px;
+         /*fadel*/
+        width: 130px;
+        
     }
 
     .about-box img
@@ -557,4 +679,25 @@ footer ul li{
     background-size: 700px;
     }
 
-} 
+    .support{
+        padding:  2em;
+    }
+
+    .support a{
+        font-size: 10px;
+    }
+
+    .support h4{
+        font-size: 12px;
+    }
+
+    .supp{
+        margin-left: 1em;
+    }
+
+    .supp4-content{
+    
+    margin-left: 20px;
+    
+    }
+}
