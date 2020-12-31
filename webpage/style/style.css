@@ -422,6 +422,11 @@ footer ul li{
     color: #eeeeee;
 }
 
+.supp4-content img
+{
+    width: 50px;
+}
+
 @media only screen and (max-width: 800px) {
     .nav-logo{
         margin-left: 1em;
