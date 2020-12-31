@@ -382,7 +382,7 @@ footer ul li{
     display: flex;
 }
 
-.supp4
+.supp
 {
     width: 400px;
     height: 400px;
@@ -610,6 +610,10 @@ footer ul li{
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
 
+    .women-title h1{
+        font-size: 30px;
+    }
+
     .product{
         padding:0;
     }
@@ -684,10 +688,7 @@ footer ul li{
     background-size: 700px;
     }
 
-    .support{
-        padding:  2em;
-    }
-
+    
     .support a{
         font-size: 10px;
     }
@@ -697,12 +698,26 @@ footer ul li{
     }
 
     .supp{
-        margin-left: 1em;
+        margin:0 0.5em 0 0.5em;
     }
 
     .supp4-content{
-    
-    margin-left: 20px;
-    
+        margin-left:0;
     }
+
+    .supp4-content img{
+        width: 25px;
+    }
+
+    .supp4-content input[type=text]{
+        width: 100px;
+        overflow: hidden;
+    }
+
+    footer ul li{
+        margin:0.5em 1em;
+        
+    }
+
+    
 }
