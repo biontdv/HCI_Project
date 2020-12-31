@@ -1,9 +1,14 @@
 function myFunction()
 {
     var email = document.getElementById("email").value
+    var pattern = /^[^ ]+@[^ ]+.[a-z]{2,3}$/;
     var password = document.getElementById("password").value
-    var genderOption = document.getElementsByClassName("gender")
+    var address = document.getElementById("address").value
+    var dob = document.getElementById('dob').value
+    var agree = document.getElementById('agreement').checked
+    var genderOption = document.getElementsByName("gender")
     var gender="nogender"
+
     
     for(let i=0; i<genderOption.length; i++)
     {
@@ -18,26 +23,51 @@ function myFunction()
 
     console.log(email)
     console.log(password)
+    console.log(dob)
     console.log(genderOption)
     console.log(gender)
 
 
     if(email === "")
     {
-        alert("Email Harus Diisi")
+        alert("Email must be filled")
         event.preventDefault()
     
+    }
+    
+    else if (!email.match(pattern))
+    {
+        alert("Email Must Contains @")
+        event.preventDefault()
     }
 
     else if(password === "")
     {
-        alert("Password Harus Diisi")
+        alert("Password must be filled")
+        event.preventDefault()
+    }
+    
+    else if(address === "")
+    {
+        alert("Address must be filled")
         event.preventDefault()
     }
 
-    else if(gender === "no gender")
+    else if(dob === "")
     {
-        alert("Pilih Gender Kamu")
+        alert("Date of Birth must be filled")
+        event.preventDefault()
+    }
+
+    else if(gender === "nogender")
+    {
+        alert("Pilih must be filled")
+        event.preventDefault()
+    }
+
+    else if(agree === false)
+    {
+        alert("You Must Agree the Term and Condition to Register!")
         event.preventDefault()
     }
 
