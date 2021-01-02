@@ -57,12 +57,27 @@
     </nav>
 
     <section>
-        <!-- <div class="slider">
-            <ul>
-                <li><img src="../asset/slider.png" alt=""></li>
-                <li><img src="../asset/SLIDER2.png" alt=""></li>         
-            </ul>
-        </div> -->
+        
+        <div class="banner">
+            <div>
+                <img  class="arrow" src="../asset/arrowleft.png" alt="" id="prev">
+            </div>
+
+            <div class="slider">
+                <!-- penampung gambar -->
+                <div class="slider-img">
+                    <img src="../asset/slider.png" alt="">
+                    <img src="../asset/SLIDER2.png" alt="">
+                    <img src="../asset/slider3.png" alt="">
+                </div>
+            </div>
+
+            <div>
+                <img  class="arrow" src="../asset/arrowright.png" alt="" id="next">
+            </div>
+
+        </div>
+
         <hr>
         <div class="best-seller">
             <div class="title">
@@ -156,7 +171,8 @@
     
 
 <script src="script/jquery-3.5.1.min.js"></script>
-<script>
+<script src="script/slider.js"></script>
+<!-- <script>
     var currSlide=1
     var $slider=$(".slider ul")
     var $responsiveWidth=$(".slider img").width()
@@ -170,6 +186,6 @@
             $(this).css("margin-left","0px")   
         })
     },2000)
-</script>
+</script> -->
 </body>
 </html>
