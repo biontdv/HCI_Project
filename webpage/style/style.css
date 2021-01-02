@@ -643,55 +643,99 @@ footer ul li{
         
     }
 
-    .about-box img
+
+    .about-box
     {
-        width: 450px;
-        height: 190px;
+        margin-top: 50px;
+        height: 100px;
+        width: 100%;
         align-items: center;
         justify-content: center;
         display: flex;
     }
 
+
+    .about-box img
+    {
+        width: 175px;
+        height: 75px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .intro
+    {
+        margin-top: 30px;
+        height: 75px;
+    }
+
     .left-intro
     {
-        height: 300px;
-        width: 500px;   
+        height: 75px;
+        width: 75px;   
     }
     
     .right-intro
     {
-        height: 250px;
-        width: 900px;
+        height: 75px;
+        width: 200px;
+    }
+
+    .contact-content
+    {
+        width: 200px;
+        font-size: 7px;
     }
 
     .content-about
     {
-        font-size: 15px;
+        font-size: 7px;
     }
     .contact-content
     {
-        font-size: 15px;
+        font-size: 7px;
     }
     .button-customer
     {
         border-radius: 5px;
-        height: 30px;
-        width: 100px;
+        height: 15px;
+        width: 50px;
     }
 
-    .contact{
-    height: 400px;
-    width: 700px;
-    background-size: 700px;
+    .contact
+    {
+        margin-top: 0;
+        width: 320px;
+        background-size: 350px;
+    }
+
+    .space-between
+    {
+        width: 40px;
+    }
+
+    .button-customer
+    {
+        border-radius: 5px;
+        height: 10px;
+        width: 25px;
+        font-size: 3px;
+    }
+
+    .button-customer:hover
+    {
+        height: 15px;
+        width: 30px;
     }
 
     
     .support a{
-        font-size: 10px;
+        font-size: 5px;
     }
 
     .support h4{
-        font-size: 12px;
+        font-size: 7px;
     }
 
     .supp{
@@ -707,13 +751,49 @@ footer ul li{
     }
 
     .supp4-content input[type=text]{
-        width: 100px;
+        width: 75px;
+        height: 10px;
         overflow: hidden;
+        font-size: 8px;
+    }
+
+    .supp4-content input[type=submit]{
+        width: 40px;
+        height: 10px;
+        overflow: hidden;
+        font-size: 6px;
     }
 
     footer ul li{
         margin:0.5em 1em;
         
+    }
+
+    .register-box
+    {
+        font-size: 15px;
+        width: 325px;
+        height: 380px;
+    }
+
+    .register-box input[type=text],[type=password]
+    {
+        margin: 0 0 0 0;
+        height: 15px;
+        width: 250px;
+        overflow: hidden;
+    }
+
+    .register-box input[type=radio]
+    {
+        width: 13px;
+        overflow: hidden;
+    }
+
+    .button-Regist
+    {
+        font-size: 13px;
+        margin-bottom:5px;
     }
 
     
