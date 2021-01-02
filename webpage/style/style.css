@@ -100,8 +100,8 @@ section{
 }
 
 .slider{
-    height: 300px;
-    width: 500px;
+    height: 400px;
+    width: 790px;
     overflow: hidden;
 }
 
@@ -113,8 +113,13 @@ section{
 }
 
 .slider-img img{
-    height: 300px;
-    width: 500px;
+    height: 400px;
+    width: 790px;
+}
+
+.arrow{
+    margin: 0 1em 0 1em;
+    cursor: pointer;
 }
 
 
@@ -576,23 +581,20 @@ footer ul li{
         
     }
 
-    .slider {
-        width: 600px;
-        height: 300px;     
+    .slider{
+        height: 150px;
+        width: 270px;
+        overflow: hidden;
     }
-    
-    .slider ul{
-        width: 6000px;
-        height: 300px;  
+
+    .slider-img img{
+        height: 150px;
+        width: 270px;
     }
-    
-    .slider ul li{
-        margin-top: 50px;
-    }
-    
-    .slider img{
-        width: 600px;
-        float: left;   
+
+    .arrow{
+        margin: 0 1em 0 1em;
+        width: 10px;
     }
 
     .title{

@@ -1,22 +1,23 @@
 $(document).ready(() =>{
-    let images = $('.slider-img')
+    var images = $('.slider-img')
+    var responsiveWidth=$(".slider-img img").width()
 
-    images.css({'margin-left': '-500px'})
+    images.css({'margin-left': -responsiveWidth})
     //button next
-    $('#next').click(() =>{
+    $('#right').click(() =>{
         $(images).animate({
-            left: '-500px'
-        }, 500, ()=>{
+            left: -responsiveWidth
+        }, 1000, ()=>{
             images.find('img:first-child').appendTo(images)
             images.css({left: '0'})
         })
     })
 
     //button prev
-    $('#prev').click(() =>{
+    $('#left').click(() =>{
         $(images).animate({
-            left: '500px'
-        }, 500, ()=>{
+            left: responsiveWidth
+        }, 1000, ()=>{
             images.find('img:last-child').prependTo(images)
             images.css({left: '0'})
         })
