@@ -34,7 +34,7 @@ function myFunction()
     
     else if (email.includes("@")==false)
     {
-        alert("Email Must Contains @")
+        alert("Wrong email format")
         event.preventDefault()
     }
 
