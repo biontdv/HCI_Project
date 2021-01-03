@@ -61,7 +61,7 @@ function myFunction()
 
     else if(gender === "nogender")
     {
-        alert("Pilih must be filled")
+        alert("Gender must be filled")
         event.preventDefault()
     }
 
