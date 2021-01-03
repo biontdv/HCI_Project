@@ -706,8 +706,9 @@ footer ul li{
     .contact
     {
         margin-top: 0;
-        width: 340px;
-        background-size: 360px;
+        /* width: 37vh; */
+        width: 22.5em;
+        background-size: 22.5em;
     }
 
     .space-between
