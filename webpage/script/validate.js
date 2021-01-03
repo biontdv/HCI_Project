@@ -1,7 +1,6 @@
 function myFunction()
 {
     var email = document.getElementById("email").value
-    var pattern = /^[^ ]+@[^ ]+.[a-z]{2,3}$/;
     var password = document.getElementById("password").value
     var address = document.getElementById("address").value
     var dob = document.getElementById('dob').value
@@ -19,8 +18,6 @@ function myFunction()
         }
     }
 
-
-
     console.log(email)
     console.log(password)
     console.log(dob)
@@ -35,7 +32,7 @@ function myFunction()
     
     }
     
-    else if (!email.match(pattern))
+    else if (email.includes("@")==false)
     {
         alert("Email Must Contains @")
         event.preventDefault()
